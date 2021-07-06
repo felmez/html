@@ -1,13 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
 .img {
     text-align: center;
 }
+
 .search-bar-container {
     height: 125px;
     width: 650px;
     background-color: #EEEEEE;
 }
+
 .search-bar-container a {
     padding-top: 5px;
     text-align: center;
     display: block;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: lightpink;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
 }
