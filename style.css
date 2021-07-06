@@ -1,0 +1,13 @@
+.img {
+    text-align: center;
+}
+.search-bar-container {
+    height: 125px;
+    width: 650px;
+    background-color: #EEEEEE;
+}
+.search-bar-container a {
+    padding-top: 5px;
+    text-align: center;
+    display: block;
+}
