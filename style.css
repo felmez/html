@@ -20,19 +20,32 @@ body {
     display: block;
 }
 
-.container ul {
+.top-container {
+    margin-right: 16px;
+    font-size: 13px;
+}
+
+.container ul .top-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.container li {
+#profile {
+    border-radius: 16px;
+}
+
+.container li,
+.odev-footer a,
+.top-container li {
     display: inline;
     padding-right: 10px;
 }
 
-.container a {
+.container a,
+.top-container li a {
     text-decoration: none;
+    color: black;
 }
 
 .container a:hover {

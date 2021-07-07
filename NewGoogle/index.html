@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google New</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png" />
+
+</head>
+
+<body>
+    <!-- top bar section -->
+    <div class="top-bar-container" style="text-align: right;">
+        <ul>
+            <li style="margin: 8px"><a href="https://mail.google.com/mail/">Gmail</a></li>
+            <li style="margin: 8px; margin-left: -2px;"><a href="https://www.google.com.tr/imghp">Images</a></li>
+            <li style="margin: 8px">
+                <a href="https://www.google.com.tr/intl/en/about/products"><img src="assets/products.svg" style="width: 16px; height: 16px; margin-right: 3px;"></a>
+            </li>
+            <li>
+                <a href="https://www.github.com/felmez" target="_blank"><img id="profile" src="assets/profile.png" style="width: 32px; height: 32px; margin-right: 1px;" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- middle content -->
+    <center>
+        <img src="assets/logo.png" width="270px" style="margin: 100px;" />
+        <div class="search-area">
+            <div class="search">
+                <div class="search-img">
+                    <span>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+              </path>
+            </svg>
+          </span>
+                </div>
+                <div class="input-container">
+                    <div class="input-area">
+                        <input type="text" class="input" id="input" maxlength="2048" autofocus="true" />
+                    </div>
+                </div>
+                <div class="search-img">
+                    <span>
+            <img src="assets/voice_icon.png" height="20px" width="20px">
+          </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" onclick="searchGoogle()">Google Search</button>
+            <button type="submit" onclick="searchGoogle()">I'm Feeling Lucky</button>
+        </div>
+    </center>
+
+
+    <!-- footer section -->
+    <div class="footer">
+        <ul>
+            <li><a href="https://about.google/">About</a></li>
+            <li><a href="https://www.google.com/intl/en_tr/ads/">Advertising</a></li>
+            <li><a href="https://www.google.com/services/">Business</a></li>
+            <li><a href="https://google.com/search/howsearchworks/">How Search works</a></li>
+            <li style="float: right; margin-right: 35px"><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+            <li style="float: right"><a href="https://policies.google.com/terms">Terms</a></li>
+            <li style="float: right"><a href="https://policies.google.com/privacy">Privacy</a></li>
+        </ul>
+    </div>
+    <!-- submit input value to google search -->
+    <script type="text/javascript">
+        function searchGoogle() {
+            var result = document.getElementById('input').value;
+            window.location = 'https://www.google.com/search?q=' + result;
+        }
+    </script>
+</body>
+
+</html>
